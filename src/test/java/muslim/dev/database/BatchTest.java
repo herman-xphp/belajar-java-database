@@ -35,7 +35,7 @@ public class BatchTest {
     for (int i = 0; i < 1000; i++) {
       preparedStatement.clearParameters();
       preparedStatement.setString(1, "admin@test.com");
-      preparedStatement.setString(1, "hello");
+      preparedStatement.setString(2, "hello");
       preparedStatement.addBatch();
     }
 
